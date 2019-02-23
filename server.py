@@ -580,7 +580,7 @@ def main():
     conn = None
     cur = None
     try:
-        conn = lite.connect('database.db')
+        conn = lite.connect('/wio-database/database.db')
         conn.row_factory = lite.Row
         cur = conn.cursor()
         cur.execute('SELECT SQLITE_VERSION()')
